@@ -17,10 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Initialize with enhanced menu enabled (toggle is checked by default)
-    dropdowns.forEach(dropdown => {
-        dropdown.classList.add('dropdown-enabled');
-    });
+    // Initialize based on checkbox state
+    if (menuToggle.checked) {
+        dropdowns.forEach(dropdown => {
+            dropdown.classList.add('dropdown-enabled');
+        });
+    }
 });
 
 // Slider functionality
