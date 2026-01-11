@@ -933,7 +933,8 @@ nav {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0;
+    gap: 20px;
+    padding: 0 10px;
 }
 
 .category-column {
